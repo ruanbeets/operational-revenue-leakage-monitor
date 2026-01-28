@@ -1,0 +1,53 @@
+# ===============================
+# OS / Editor
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+*.swp
+*.swo
+
+# ===============================
+# Python / Virtual Envs (future-proof)
+# ===============================
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# ===============================
+# Database / PostgreSQL
+# ===============================
+*.log
+*.pid
+
+# PostgreSQL credentials (NEVER COMMIT)
+.pgpass
+pgpass.conf
+
+# Local database artifacts
+*.db
+*.sqlite
+*.sqlite3
+
+# ===============================
+# Data Outputs (Derived)
+# ===============================
+data/processed/*
+!data/processed/README.md
+
+# ===============================
+# Temporary / Exported Files
+# ===============================
+*.tmp
+*.bak
+*.csv~
+*.zip
+
+# ===============================
+# Power BI / BI Tools (optional)
+# ===============================
+*.pbix
+*.pbit
