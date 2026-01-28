@@ -14,3 +14,10 @@
 - Reconciliation focuses on structural consistency, not financial settlement
 - Cleaning logic must be conservative to avoid false certainty
 - Results are illustrative of process, not absolute revenue figures
+
+### Reconciliation Scope
+
+Revenue reconciliation at this stage is performed only at the aggregate
+level. Matching totals do not guarantee absence of leakage at lower
+granularities such as customer, merchant, or transaction type.
+
