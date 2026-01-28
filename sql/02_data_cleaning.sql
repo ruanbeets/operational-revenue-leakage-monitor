@@ -33,3 +33,23 @@ SELECT
     END AS has_valid_age
 
 FROM transactions_raw;
+
+-- ================================
+-- CLEANED NETWORK TRANSACTIONS VIEW
+-- ================================
+
+CREATE OR REPLACE VIEW v_network_transactions_clean AS
+SELECT
+    source_id,
+    target_id,
+    amount,
+    transaction_type,
+    fraud,
+
+    -- Validation flags
+    CASE
+        WHEN amount > 0 THEN TRUE
+        ELSE FALSE
+    END AS is_valid_amount
+
+FROM transaction_network_raw;
